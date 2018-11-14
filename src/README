@@ -16,7 +16,7 @@ public class ResponseHeaderUtil {
     try {
     PrintWriter writer1 = null;
     writer1 = new PrintWriter(new File("testout.txt"));// file lưu kq header và body
-	URL obj = new URL("https://en.wikipedia.org/wiki/HTTP_message_body");
+	URL obj = new URL("https://github.com/LukWebsForge/JustMail");
 	URLConnection conn = obj.openConnection(); // mở kết nối đến URL
 	Map<String, List<String>> map = conn.getHeaderFields(); // Lấy ra kết quả header
 	
@@ -42,9 +42,10 @@ public class ResponseHeaderUtil {
 	BufferedReader in = new BufferedReader(new InputStreamReader(
             conn.getInputStream())); // lấy phần body
 	String inputLine;
-	while ((inputLine = in.readLine()) != null) 
+	while ((inputLine = in.readLine()) != null) {
 		writer1.println(inputLine);// ghi ra file body
 		System.out.println(inputLine);
+        }
 	in.close();
 	writer1.close();
 
