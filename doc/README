@@ -1,1 +1,7 @@
 Đây là nơi chứa báo cáo của nhóm.
+Đề tài sử dụng kĩ thuật web server
+Thành viên: Phạm Ngọc Huy B15DCAT092
+                      Trần Minh Hiếu   B15DCAT072	
+                       Pham Ngọc Mạnh B15DCAT116
+Viết ra chương trình gửi 1 yêu cầu HTTP Request,tiếp nhận kết quả và hiển thị nội dung chi tiết của HTTP Response bao gồm header , body
+Ghi ra file  test nội dung HTTP Respone 
